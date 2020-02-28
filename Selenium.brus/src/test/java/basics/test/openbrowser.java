@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+// git training
 
 public class openbrowser {
 	
@@ -22,12 +23,13 @@ public class openbrowser {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.findElement(By.linkText("Tooltip and Double click")).click();
+	
 		
 		//doubleclick button
 		WebElement ele=driver.findElement(By.id("doubleClickBtn"));
 		Actions act=new Actions(driver);
 		act.moveToElement(ele).doubleClick().build().perform();
-		
+		driver.close();
 		
 		
 	}
