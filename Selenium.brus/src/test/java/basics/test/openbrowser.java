@@ -29,7 +29,7 @@ public class openbrowser {
 		WebElement ele=driver.findElement(By.id("doubleClickBtn"));
 		Actions act=new Actions(driver);
 		act.moveToElement(ele).doubleClick().build().perform();
-		driver.close();
+		driver.quit();
 		//done
 		
 		
