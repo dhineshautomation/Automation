@@ -30,6 +30,7 @@ public class openbrowser {
 		Actions act=new Actions(driver);
 		act.moveToElement(ele).doubleClick().build().perform();
 		driver.close();
+		//done
 		
 		
 	}
